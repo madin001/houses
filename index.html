@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a class="logo__link" href="#" >
+                <img class="logo_img" src="./images/house__logo.png" width="200" height="100" alt="">
+            </a>
+            <nav class="header__nav">
+                <button class="order__btn">
+                    <i class="fas fa-align-justify fa-3x"></i></button>
+                    <button class="order__btn-second">
+                        <i class="fas fa-border-all fa-3x"></i>
+                    </button>
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="./index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="./page_about.html" class="nav__link">About Page</a></li>
+                        <li class="nav__item"><a href="./page_us.html" class="nav__link">About Us</a></li>
+                    </ul>
+                    
+                    <button class="Open__big-btn">
+                        <svg width="120" height="120" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.31 55.17L31.17 35.48L8.01001 26.35L24.32 23.56L32 8.35L39.87 24.07L56.18 26.69L33.25 34.72L39.03 44.65L46.04 55.17L32.52 47.73L17.31 55.17Z" fill="black"/>
+                            <path d="M58.46 26.5C58.5043 26.183 58.4252 25.8611 58.2392 25.6006C58.0531 25.3401 57.7742 25.1609 57.46 25.1L40.63 22.66L33.12 7.45C33.014 7.24433 32.8534 7.07182 32.6559 6.95138C32.4583 6.83095 32.2314 6.76723 32 6.76723C31.7686 6.76723 31.5417 6.83095 31.3442 6.95138C31.1466 7.07182 30.986 7.24433 30.88 7.45L23.37 22.66L6.58 25.1C6.35387 25.1408 6.14305 25.2422 5.97 25.3934C5.79694 25.5445 5.66815 25.7398 5.59733 25.9584C5.52652 26.177 5.51634 26.4107 5.56788 26.6347C5.61942 26.8586 5.73075 27.0644 5.89 27.23L18 39.07L15.17 55.79C15.1357 56.0204 15.1654 56.2558 15.2559 56.4705C15.3465 56.6851 15.4943 56.8708 15.6832 57.007C15.8721 57.1433 16.0949 57.225 16.3272 57.2432C16.5594 57.2613 16.7922 57.2153 17 57.11L32 49.21L47 57.11C47.2075 57.2126 47.4391 57.2566 47.6697 57.2372C47.9004 57.2177 48.1213 57.1356 48.3087 56.9997C48.4961 56.8638 48.6427 56.6793 48.7329 56.4661C48.823 56.2529 48.8531 56.0191 48.82 55.79L46 39.07L58.11 27.23C58.3026 27.0309 58.4254 26.7748 58.46 26.5ZM39.62 25L51.87 26.78L33.25 33.08V13.36L38.68 24.36C38.7749 24.5334 38.9096 24.6818 39.073 24.7931C39.2364 24.9043 39.4239 24.9753 39.62 25V25ZM24.38 25C24.581 24.97 24.7716 24.8916 24.9354 24.7713C25.0992 24.6511 25.2312 24.4927 25.32 24.31L30.75 13.31V33.08L12.13 26.82L24.38 25ZM11.56 29.27L30 35.46L18.53 51L20.62 38.84C20.651 38.6404 20.6336 38.4363 20.5692 38.2449C20.5048 38.0534 20.3953 37.8803 20.25 37.74L11.56 29.27ZM32 46.55C31.7984 46.5511 31.5999 46.599 31.42 46.69L20.63 52.36L32 36.93L43.37 52.36L32.58 46.69C32.4001 46.599 32.2016 46.5511 32 46.55ZM43.38 38.84L45.47 51L34 35.46L52.42 29.27L43.73 37.74C43.5882 37.8822 43.4825 38.0562 43.4216 38.2476C43.3607 38.4389 43.3465 38.642 43.38 38.84V38.84Z" fill="red"/>
+                        </svg>
+                    </button>
+                    
+                    
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                
+                <section>
+                    <h1 class="heading__first">Which your dream House?</h1>
+                    
+                    <form id="form" class="form">
+                        <input type="text" class="search__input" placeholder="search here">
+
+                        <select  id="search__select" class="select">
+                            <option value="All">All</option>
+                        </select>
+
+                        <select id="price__select" class="select">
+                            <option value="All">All</option>
+                            <option value="Expensive-cheap">Expensive-cheap</option>
+                            <option value="Cheap-expensive">Cheap-expensive</option>
+                            <option value="far-near">far-near</option>
+                            <option value="near-far">near-far</option>
+                        </select>
+                    
+                        <button class="search__btn">Search</button>
+                    </form>
+                    <ul class="house__list">
+                        
+                    </ul>
+                    <template id="template">
+                        <li class="house__item">
+                            <img  class="house__img"   alt="img">
+                            <div class="house__bottom">
+                                <h2 class="house__title">House</h2>
+                                <p class="house__region house_style">Region:Tashkent</p>
+                              <ul class="house__list-style house_style"></ul>
+                                <p class="house__area house_style">Area:70km2</p>
+                                <p class="house__price house_style">Price:65757$</p>
+                                <button class="house__btn">
+                                    <svg class="house__btn-img" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.31 55.17L31.17 35.48L8.01001 26.35L24.32 23.56L32 8.35L39.87 24.07L56.18 26.69L33.25 34.72L39.03 44.65L46.04 55.17L32.52 47.73L17.31 55.17Z" fill="white"/>
+                                        <path d="M58.46 26.5C58.5043 26.183 58.4252 25.8611 58.2392 25.6006C58.0531 25.3401 57.7742 25.1609 57.46 25.1L40.63 22.66L33.12 7.45C33.014 7.24433 32.8534 7.07182 32.6559 6.95138C32.4583 6.83095 32.2314 6.76723 32 6.76723C31.7686 6.76723 31.5417 6.83095 31.3442 6.95138C31.1466 7.07182 30.986 7.24433 30.88 7.45L23.37 22.66L6.58 25.1C6.35387 25.1408 6.14305 25.2422 5.97 25.3934C5.79694 25.5445 5.66815 25.7398 5.59733 25.9584C5.52652 26.177 5.51634 26.4107 5.56788 26.6347C5.61942 26.8586 5.73075 27.0644 5.89 27.23L18 39.07L15.17 55.79C15.1357 56.0204 15.1654 56.2558 15.2559 56.4705C15.3465 56.6851 15.4943 56.8708 15.6832 57.007C15.8721 57.1433 16.0949 57.225 16.3272 57.2432C16.5594 57.2613 16.7922 57.2153 17 57.11L32 49.21L47 57.11C47.2075 57.2126 47.4391 57.2566 47.6697 57.2372C47.9004 57.2177 48.1213 57.1356 48.3087 56.9997C48.4961 56.8638 48.6427 56.6793 48.7329 56.4661C48.823 56.2529 48.8531 56.0191 48.82 55.79L46 39.07L58.11 27.23C58.3026 27.0309 58.4254 26.7748 58.46 26.5ZM39.62 25L51.87 26.78L33.25 33.08V13.36L38.68 24.36C38.7749 24.5334 38.9096 24.6818 39.073 24.7931C39.2364 24.9043 39.4239 24.9753 39.62 25V25ZM24.38 25C24.581 24.97 24.7716 24.8916 24.9354 24.7713C25.0992 24.6511 25.2312 24.4927 25.32 24.31L30.75 13.31V33.08L12.13 26.82L24.38 25ZM11.56 29.27L30 35.46L18.53 51L20.62 38.84C20.651 38.6404 20.6336 38.4363 20.5692 38.2449C20.5048 38.0534 20.3953 37.8803 20.25 37.74L11.56 29.27ZM32 46.55C31.7984 46.5511 31.5999 46.599 31.42 46.69L20.63 52.36L32 36.93L43.37 52.36L32.58 46.69C32.4001 46.599 32.2016 46.5511 32 46.55ZM43.38 38.84L45.47 51L34 35.46L52.42 29.27L43.73 37.74C43.5882 37.8822 43.4825 38.0562 43.4216 38.2476C43.3607 38.4389 43.3465 38.642 43.38 38.84V38.84Z" fill="gold"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                            
+                        </li>
+                    </template>
+                    
+                </section>
+                <div class="modal"></div>
+                <div class="modal__wrapper">
+                    <button class="close__btn">
+                        <svg width="20" height="40" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.95232 23.6667C2.43898 23.6667 2.92232 23.455 3.25232 23.045L11.299 13.045C11.7956 12.4267 11.789 11.5433 11.2806 10.9333L2.94732 0.933326C2.35898 0.22666 1.30732 0.13166 0.598983 0.719993C-0.107684 1.30833 -0.202684 2.35999 0.387316 3.06666L7.84565 12.0183L0.653983 20.955C0.0773163 21.6717 0.190649 22.7217 0.908982 23.2983C1.21565 23.5467 1.58565 23.6667 1.95232 23.6667Z" fill="black"/>
+                        </svg>
+                    </button>
+                    
+                    <ul class="set__list">
+                        
+                    </ul>
+                    <template id="set__template">
+                        <li class="house__item">
+                            <img  class="house__img"   alt="img">
+                            <h2 class="house__title">House</h2>
+                            <p class="house__region house_style">Region:Tashkent</p>
+                           <ul class="house__list-style house_style"></ul>
+                            <p class="house__area house_style">Area:70km2</p>
+                            <p class="house__price house_style">Price:65757$</p>
+                            <button class="close__set-btn">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 21.75C20.5 22.4387 19.94 23 19.25 23H6.75C6.06 23 5.5 22.4387 5.5 21.75V8H20.5V21.75ZM10.5 3.41C10.5 3.21625 10.7675 3 11.125 3H14.875C15.2325 3 15.5 3.21625 15.5 3.41V5.5H10.5V3.41ZM24.25 5.5H23H18V3.41C18 1.805 16.5987 0.5 14.875 0.5H11.125C9.40125 0.5 8 1.805 8 3.41V5.5H3H1.75C1.0625 5.5 0.5 6.0625 0.5 6.75C0.5 7.4375 1.0625 8 1.75 8H3V21.75C3 23.8175 4.6825 25.5 6.75 25.5H19.25C21.3175 25.5 23 23.8175 23 21.75V8H24.25C24.9375 8 25.5 7.4375 25.5 6.75C25.5 6.0625 24.9375 5.5 24.25 5.5Z" fill="black"/>
+                                </svg>
+                            </button>
+                            
+                            
+                        </li>
+                    </template>
+                </div>
+            </div>
+        </main>
+        <script src="./js/house.js"></script>
+        <script src="./js/util.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+    </html>

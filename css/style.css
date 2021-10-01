@@ -1,0 +1,428 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amaranth', 'sans-serif';
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1330px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 10px;
+    background-color: #f7fa4b;
+    border: 2px solid red;
+}
+
+
+.logo_img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    vertical-align: middle;
+    width: 200px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.order__btn {
+    background: none;
+    border: none;
+    margin-right: 30px;
+}
+
+.order__btn-second {
+    background: none;
+    border: none;
+    margin-right: 50px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Open__big-btn {
+    background: none;
+    border: none;
+    outline: none;
+    margin-left: 50px;
+
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 34px;
+}
+
+.nav__link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 15px;
+    border: 2px solid red;
+    border-radius: 30px;
+    color: red;
+}
+
+.nav__link:hover {
+    border: 2px solid #f7fa4b;
+    color: #f7fa4b;
+    background-color: red;
+}
+
+.main {
+    padding-top: 10px;
+    background-color: rgb(241, 237, 237);
+}
+
+.heading__first {
+    text-align: center;
+    font-size: 35px;
+    border: 3px solid orange;
+    border-radius: 40px;
+    background-color: rgb(243, 206, 137);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.search__input {
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 3px solid red;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.search__input::placeholder {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.select {
+    margin-left: 15px;
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 3px solid red;
+
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.search__btn {
+    margin-left: 15px;
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 3px solid red;
+    background-color: #fff;
+
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.search__btn:hover {
+    color: white;
+    background-color: red;
+    border: 3px solid white;
+
+}
+
+
+.house__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    list-style: none;
+}
+
+.house__item {
+    width: 300px;
+    padding: 10px 5px 15px 5px;
+    background-color: white;
+    border: 3px solid gold;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+
+.house__item:not(:nth-child(4n)) {
+    margin-right: 25px;
+}
+
+.house__item-change {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.house__item-change:not(:nth-child(4n)) {
+    margin-right: 0;
+}
+
+.house__img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.house__img-change {
+    width: 500px;
+}
+
+.house__bottom {
+    padding: 10px;
+}
+
+.house__bottom-change {
+    margin-left: 50px;
+    width: 500px;
+
+}
+
+.house__title {
+    font-size: 40px;
+}
+
+.house_style {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.house__list-style {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.house__item-style {
+    margin-left: 5px;
+}
+
+
+.house__btn {
+    background: none;
+    border: none;
+    outline: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.house__btn-change {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    margin-left: 0;
+    transform: translateX(0%);
+
+}
+
+.house__btn-img-change {
+    width: 150px;
+    height: 150px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+
+}
+
+.modal-active {
+    display: block;
+}
+
+.modal__wrapper {
+
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-image: linear-gradient(rgb(236, 236, 114), rgb(245, 214, 158));
+    height: 100%;
+    width: 450px;
+    padding: 75px;
+    transform: translateX(450px);
+    transition: .5s;
+    overflow-y: scroll;
+
+}
+
+.modal__wrapper-active {
+    transform: translateX(0);
+}
+
+.close__btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+}
+
+.close__set-btn {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+
+/* About page */
+
+.main_about {
+    padding-bottom: 100px;
+}
+
+.title {
+    font-size: 40px;
+    padding: 10px 0;
+    text-align: center;
+    border: 3px solid red;
+    margin-top: 15px;
+}
+
+.box {
+    border: 3px solid gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+.text {
+    width: 500px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+.form__about {
+    display: flex;
+}
+
+.input_about {
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 3px solid red;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input_about::placeholder {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.last__text {
+    margin-top: 15px;
+
+    font-size: 30px;
+    text-align: center;
+    color: red;
+    padding: 20px;
+    border: 5px solid gold;
+}
+
+
+
+/* About us */
+.main__us {
+    padding-top: 20px;
+    padding-bottom: 200px;
+}
+
+.text_box {
+    text-align: center;
+    margin-top: 20px;
+    border: 10px double gold;
+}
+
+.text_us {
+    font-size: 25px;
+}
+
+.text_red {
+    color: red;
+    font-size: 30px;
+}
+
+.email_tel {
+    color: black;
+    font-size: 25px;
+}
+
+.box_mail {
+    margin-top: 20px;
+    border: 10px double gold;
+    padding: 20px;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.boxcha {
+    display: flex;
+    justify-content: center;
+}
+
+.links {
+    padding: 30px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    border: 10px double gold;
+}
+
+.email_links {
+    display: inline-block;
+    padding: 20px 100px;
+    border: 10px double red;
+    font-size: 25px;
+    color: #000;
+}
